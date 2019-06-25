@@ -1,0 +1,14 @@
+dataSourceKey: ${0}
+destination: canal
+groupId: esGroup
+esMapping:
+  _index: ${1}
+  _type: doc
+  _id: ID
+#  upsert: true
+#  pk: _id
+  sql: "${2}"
+#  objFields:
+#    _labels: array:;
+# etlCondition: "where a.c_time>='{0}'"
+  commitBatch: 30

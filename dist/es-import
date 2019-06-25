@@ -1,0 +1,5 @@
+#!/bin/bash
+
+CPATH=$(cd `dirname $0`; pwd)
+
+java -cp $CPATH/ESMaintainTools-1.0.0-SNAPSHOT-jar-with-dependencies.jar lano.es.maintain.tools.ESAddImportDatabase ./ $1 $2 $3 $4 $5
